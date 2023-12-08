@@ -1,0 +1,27 @@
+.partners-section {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    /* height: 23.938rem; */
+    margin: 0 4rem;
+    /* background-image: url("../../assets/animal-print.png");
+    background-repeat: repeat;
+    background-position: center; */
+
+    /* Adjust font-size and line-height based on screen width */
+    /* @media (max-width: 1280px) {
+        margin: 0 4rem;
+    }
+
+    @media (max-width: 768px) {
+        margin: 0 4rem;
+    } */
+
+    @media (max-width: 680px) {
+        margin: 0 1rem;
+    }
+}
+
+.partner-logo {
+    width: 100%
+}

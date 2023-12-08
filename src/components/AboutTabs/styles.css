@@ -1,0 +1,11 @@
+.about-tabs  {
+
+    @media (max-width: 680px) {
+        /* padding: 0 0;
+        height: 3.625rem; */
+    }
+}
+
+.about-tabs .css-19kzrtu {
+    padding: 0px;
+}

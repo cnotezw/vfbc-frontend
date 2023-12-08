@@ -1,0 +1,18 @@
+.destination-banner {
+    /* min-height: 30rem; */
+    background-color: #485840;
+
+    @media (max-width: 680px) {
+        padding: 1rem;
+      }
+}
+
+.banner-section {
+    position: relative;
+    background: transparent !important;
+    padding: 1.5rem 4rem !important;
+
+    @media (max-width: 680px) {
+        padding: 1rem !important;
+      }
+}

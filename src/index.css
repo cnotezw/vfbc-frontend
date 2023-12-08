@@ -1,4 +1,6 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
 body {
+  font-size: 16px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -7,7 +9,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fadeIn {
+  animation: 0.5s fadeIn forwards;
+  /* max-height: 100vh; */
 }
+
+.fadeOut {
+  animation: 0.5s fadeOut forwards;
+  /* max-height: 100vh; */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* transform: translate(-20px, 0); */
+  }
+  to {
+    opacity: 1;
+    /* transform: translate(0px, 0px); */
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    /* transform: translate(0px, 0px); */
+  }
+  to {
+    /* transform: translate(-20px, 0); */
+    opacity: 0;
+  }
+}
+

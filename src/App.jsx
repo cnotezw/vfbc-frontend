@@ -1,25 +1,101 @@
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
-import Home from "./containers/Home";
+import IndexPage from "./containers/Home";
 import Destination from "./containers/Destination";
+import TripPlanner from "./containers/TripPlanner";
 import Blog from "./containers/Blog";
+import NotFound from "./components/NotFound";
+import Footer from "./components/Footer";
 
-import {Navbar} from "./components/Navbar";
+import { Navbar } from "./components/Navbar";
 
-// Define the App component
-function App() {
+const ScrollToTop = () => {
+  // Extracts pathname property(key) from an object
+  const { pathname } = useLocation();
+  // Automatically scrolls to top whenever pathname changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+}
+
+function Content() {
+  const location = useLocation();
+
+  const [displayLocation, setDisplayLocation] = useState(location);
+  const [transitionStage, setTransistionStage] = useState("fadeIn");
+
+  useEffect(() => {
+    if (location !== displayLocation) setTransistionStage("fadeOut");
+  }, [location, displayLocation]);
+
   return (
-    // Create a browser router
-    <div>
-      {/* Create a navigation bar with links to each route */}
-      <Navbar />
-
-      {/* Render the component for each route using routes */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/destination" element={<Destination />} />
-        <Route path="/blog" element={<Blog />} />
+    <div
+      className={`${transitionStage}`}
+      onAnimationEnd={() => {
+        if (transitionStage === "fadeOut") {
+          setTransistionStage("fadeIn");
+          setDisplayLocation(location);
+        }
+      }}
+    >
+      <Routes location={displayLocation}>
+        <Route index element={<IndexPage />} />
+        <Route path=":destination" element={<Destination />}>
+            <Route index element={<Destination />} />
+            {/* <Route path="about" element={<Destination />} /> */}
+            <Route path="plan-your-trip" element={<TripPlanner />} />
+            <Route path="useful-links" element={<Destination />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="*" element={<NotFound />} />
+        </Route>
+          {/* <Route path="/:destination" element={<Destination />} />
+          <Route path="/blog" element={<Blog />} /> */}
       </Routes>
     </div>
+  );
+}
+// Define the App component
+function App() {
+  const location = useLocation();
+
+  const [displayLocation, setDisplayLocation] = useState(location);
+  const [transitionStage, setTransistionStage] = useState("fadeIn");
+
+  useEffect(() => {
+    if (location !== displayLocation) setTransistionStage("fadeOut");
+  }, [location, displayLocation]);
+
+  return (
+    // Create a browser router
+    <>
+    <Navbar />
+    <div
+      className={`${transitionStage}`}
+      onAnimationEnd={() => {
+        if (transitionStage === "fadeOut") {
+          setTransistionStage("fadeIn");
+          setDisplayLocation(location);
+        }
+      }}
+    >
+          
+      <Routes location={displayLocation}>
+        <Route index element={<IndexPage />} />
+        <Route path=":destination" element={<Destination />}>
+            <Route index element={<Destination />} />
+            {/* <Route path="about" element={<Destination />} /> */}
+            <Route path="plan-your-trip" element={<TripPlanner />} />
+            <Route path="useful-links" element={<Destination />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="*" element={<NotFound />} />
+        </Route>
+          {/* <Route path="/:destination" element={<Destination />} />
+          <Route path="/blog" element={<Blog />} /> */}
+      </Routes>
+    <Footer />
+    <ScrollToTop />
+  </div></>
   );
 }
 

@@ -1,0 +1,9 @@
+.destination-about {
+    min-height: 20rem;
+    background-color: #ffffff;
+    margin: 4rem 4rem;
+
+    @media (max-width: 680px) {
+        margin: 1rem;
+    }
+}

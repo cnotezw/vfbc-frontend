@@ -1,0 +1,27 @@
+.about-facilities {
+	color: #AB9370;
+	font-family: Montserrat;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 156.9%; /* 1.96125rem */
+	letter-spacing: -0.0625rem;
+	margin: 0;
+	padding: 1rem 1rem 0 1rem;
+	z-index: 10;
+}
+
+.about-facilities-list {
+	color: #565656;
+	font-family: Montserrat;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 156.9%;
+	letter-spacing: -0.0625rem;
+	z-index: 10;
+}
+
+.about-facilities-list li {
+	cursor: pointer;
+}

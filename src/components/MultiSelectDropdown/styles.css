@@ -1,0 +1,58 @@
+.booking-multi-select {
+    color: #fff !important;
+}
+
+.booking-multi-select .MuiOutlinedInput-notchedOutline {
+    border: none !important;
+    color: #fff !important;
+  }
+
+
+.css-ibbbn-MuiFormLabel-root-MuiInputLabel-root {
+    color: #fff !important;
+}
+
+.css-ibbbn-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: #fff !important;
+}
+
+.css-ps5csw-MuiButtonBase-root-MuiCheckbox-root {
+    color: #485840 !important;
+}
+
+.css-1pm1r1e-MuiFormLabel-root-MuiInputLabel-root {
+    color: #fff !important;
+}
+
+.css-zu9596-MuiInputBase-root-MuiOutlinedInput-root {
+    color: #ffffff !important;
+}
+
+.css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+    color: #ffffff !important;
+}
+
+.css-cquceo-MuiFormControl-root {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    vertical-align: top;
+    margin: 0px;
+    width: 100% !important;
+    max-width: 25rem !important;
+    border-right: 1px solid #ffffff !important;
+
+    @media (max-width: 680px) {
+        border: 1px solid #ffffff !important;
+    }
+}
+

@@ -37,8 +37,8 @@ export default function DestinationReviews({ data }) {
         </Box>
         <Box>
             <Swiper
-              slidesPerView={windowWidth > 680 ? 2.5 : 1}
-              spaceBetween={5}
+              slidesPerView={windowWidth > 680 ? 3 : 1}
+              spaceBetween={10}
               loop={true}
               pagination={true}
               autoplay={{
@@ -78,7 +78,7 @@ export default function DestinationReviews({ data }) {
                                 fontFamily: 'Hurricane',
                                 lineHeight: '1.778rem',
                                 letterSpacing: '5%',
-                                textAlign: 'center',
+                                textAlign: 'justify',
                                 color: '#AB9370',
                                 margin: '1rem 0'
                               }}

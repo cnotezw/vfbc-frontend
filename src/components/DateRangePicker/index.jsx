@@ -6,9 +6,7 @@ import 'react-dates/lib/css/_datepicker.css';
 
 import { DateRangePicker } from 'react-dates';
 
-const ReactDateRangePicker = () => {
-  const [dateRange, setDateRange] = useState([null, null])
-  const [focusedInputState, setFocusedInput] = useState(null)
+const ReactDateRangePicker = ({ dateRange, setDateRange, focusedInputState, setFocusedInput }) => {
   // this.state = {
   //   startDate: null,
   //   endDate: null,
@@ -16,7 +14,7 @@ const ReactDateRangePicker = () => {
   // };
     return (
       <div className="react-date-range">
-        <DateRangePicker
+        {dateRange && <DateRangePicker
           startDateId="startDate"
           endDateId="endDate"
           startDate={dateRange[0]}
@@ -26,7 +24,8 @@ const ReactDateRangePicker = () => {
           onFocusChange={(focusedInput) => { setFocusedInput(focusedInput)}}
           startDatePlaceholderText="Checkin"
           endDatePlaceholderText="Checkout"
-        />
+        />}
+        
       </div>
     )
 }

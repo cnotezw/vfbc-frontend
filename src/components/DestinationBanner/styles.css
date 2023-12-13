@@ -1,10 +1,44 @@
 .destination-banner {
     /* min-height: 30rem; */
+    display: flex;
     background-color: #485840;
+    position: relative;
 
     @media (max-width: 680px) {
-        padding: 1rem;
+        padding-left: 1rem;
       }
+}
+
+.section-one {
+ width: 45%;
+}
+
+.section-one .banner-title {
+  font-size: 2rem;
+  font-family: Montserrat;
+  font-weight: 700;
+  color: #AB9370;
+  margin: 1rem 4rem;
+}
+
+.section-two {
+ width: 55%;
+}
+
+@media (max-width: 680px) {
+  .section-one {
+    width: 50%;
+    /* position: absolute;
+    z-index: 10; */
+   }
+   
+   .section-two {
+    width: 50%;
+   }
+
+   .section-one .banner-title {
+    margin: .5rem 1rem 0 0rem;
+  }
 }
 
 .banner-section {
@@ -13,6 +47,60 @@
     padding: 1.5rem 4rem !important;
 
     @media (max-width: 680px) {
-        padding: 1rem !important;
+        padding: 0 1rem !important;
       }
+}
+
+.banner-section .title {
+  font-size: 4.688rem;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: #fff;
+  margin: 1rem 0;
+  line-height: 3.1rem;
+}
+
+.banner-section .title.type {
+  font-weight: 300;
+}
+
+@media (max-width: 680px) {
+  .banner-section {
+    padding: 0rem !important;
+  }
+
+  .banner-section .title {
+    font-size: 1.688rem;
+    margin: 0rem 0;
+    line-height: 1.9rem !important;
+  }
+}
+
+.lower-section {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 680px) {
+    margin: 0;
+  }
+}
+
+.lower-section .selector-btn {
+  @media (max-width: 680px) {
+    position: absolute;
+    top: 3rem;
+    right: -10rem;
+    width: 10rem;
+  }
+}
+
+.section-two .image-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.625rem 0rem 0rem 0.625rem;
+
 }

@@ -1,5 +1,5 @@
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import SidebarMenu from '../SidebarMenu'
@@ -8,7 +8,8 @@ import "./styles.css";
 import vfbclogo from '../../assets/logo.png';
 
 export const Navbar = () => {
-
+  let location = useLocation();
+  const [activePath, setPathname] = useState(null);
   const [logo, setLogo] = useState(null);
 
   // useEffect(() => {
@@ -62,6 +63,11 @@ export const Navbar = () => {
     window.addEventListener("scroll", changeLogo)
   })
 
+  useEffect(() => {
+    console.log("location nav ", location.pathname)
+    setPathname(location.pathname)
+  }, [location])
+
     return (
         <nav
           style={{
@@ -82,7 +88,7 @@ export const Navbar = () => {
                 
             </li>
           </ul> */}
-         <div className="sidebar"> <SidebarMenu /></div>
+         <div className="sidebar"> <SidebarMenu activePath={activePath} /></div>
       </nav>
     )
 }

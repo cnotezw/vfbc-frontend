@@ -30,7 +30,7 @@ const titleStyle = {
   alignItems: 'center'
 };
 
-const DestinationHeader = ({intro, title, logo, image, animation}) => {
+const DestinationHeader = ({intro, title, logo, image, animation, starAnimation, destination}) => {
   const [ anime, setAnime ] = React.useState(null)
   React.useEffect(() => {
     if(animation){
@@ -47,14 +47,14 @@ const DestinationHeader = ({intro, title, logo, image, animation}) => {
 	return (
     <header className='destination-header' style={{ backgroundImage: `url(${image})`}}>
       <div className="box-overlay"></div>
-        <div class={'star'}></div>
+        {starAnimation && <div class={'star'}></div>}
         {/* <div class="star"></div> */}
         
         <div className="box-text">
           <h5>{intro}</h5>
           <h1>{title} </h1>
           <img src={logo} alt="" />
-          <BookingBanner />
+          <BookingBanner destination={destination} />
         </div>
     </header>
 	)

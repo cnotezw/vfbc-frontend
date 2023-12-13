@@ -7,3 +7,31 @@
         margin: 0 1rem;
     }
 }
+
+.destination-activities .subtitle-one {
+    font-size: 1.25rem;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 105%;
+    letter-spacing: -0.0625rem;
+}
+
+
+.destination-activities .subtitle-two {
+    width: 50%;
+    font-size: 2rem;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #AB9370;
+    text-align: center;
+    margin: 2rem auto;
+    line-height: 1.978rem;
+
+}
+
+@media (max-width: 680px) {
+    .destination-activities .subtitle-two {
+        width: 100%;
+    
+    }
+}

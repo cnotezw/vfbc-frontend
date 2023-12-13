@@ -249,7 +249,8 @@ export const katombora_data = {
         }
     },
     map: {
-        url: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1702049305/VFBC%20WEBSITE%20PICS/katombora-mobile_bt9dth',
+        mobile: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1702049305/VFBC%20WEBSITE%20PICS/katombora-mobile_bt9dth',
+        desktop: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701466787/VFBC%20WEBSITE%20PICS/kato_map2_1_bpzhje',
     },
     activities: {
         title: 'About Us',
@@ -257,19 +258,51 @@ export const katombora_data = {
         list: [
             {
               name: 'Zambezi Cruise',
-              image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298210/VFBC%20WEBSITE%20PICS/Pictures/002A1913_qiqief'
+              image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298210/VFBC%20WEBSITE%20PICS/Pictures/002A1913_qiqief',
+              description: 'The vastness of the river unfolded before us, reflecting the fiery hues of the setting sun. The mist rising from the water created an ethereal atmosphere, adding to the magic of the moment. As we cruised past lush islands and towering cliffs, the setting sun transformed the landscape into a canvas of vibrant colors.',
+              activities: [
+                {
+                  name: "Sunset Cruise",
+                  description: "As the sun dipped towards the horizon, casting a fiery glow across the Zambezi River, I boarded a small boat, embarking on a sunset cruise around Katombora Island. The gentle breeze ruffled my hair as we glided across the water, the rhythmic sound of the boat's engine a soothing counterpoint to the symphony of birdsong emanating from the lush banks.",
+                  image: "https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298187/VFBC%20WEBSITE%20PICS/Pictures/002A1722_ozt4ob"
+                },
+              ]
             },
             {
               name: 'Game Drives',
-              image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298110/VFBC%20WEBSITE%20PICS/Pictures/002A1163_ygnt5o'
+              image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298110/VFBC%20WEBSITE%20PICS/Pictures/002A1163_ygnt5o',
+              description: "The anticipation crackled in the air as our jeep bounced along the dusty track, plunging deeper into the heart of the Mosi-oa-Tunya National Park. Dawn painted the sky in hues of orange and pink, promising a day filled with adventure.",
+              activities: [
+                {
+                  name: "Elephant Watching",
+                  description: "As the sun dipped towards the horizon, casting a fiery glow across the Zambezi River, I boarded a small boat, embarking on a sunset cruise around Katombora Island. The gentle breeze ruffled my hair as we glided across the water, the rhythmic sound of the boat's engine a soothing counterpoint to the symphony of birdsong emanating from the lush banks.",
+                  image: "https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298187/VFBC%20WEBSITE%20PICS/Pictures/002A1722_ozt4ob"
+                },
+              ]
             },
             {
               name: 'Fishing',
-              image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695299456/VFBC%20WEBSITE%20PICS/Pictures/002A2601_ujpop0'
+              image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695299456/VFBC%20WEBSITE%20PICS/Pictures/002A2601_ujpop0',
+              description: "The pre-dawn light kissed the horizon as I boarded the boat, my excitement palpable. The Zambezi River lay before me, a glistening ribbon of water teeming with possibilities. My mission: to conquer the legendary tigerfish, known for its ferocious fighting spirit and razor-sharp teeth.",
+              activities: [
+                {
+                  name: "Boat Fishing",
+                  description: "As the sun dipped towards the horizon, casting a fiery glow across the Zambezi River, I boarded a small boat, embarking on a sunset cruise around Katombora Island. The gentle breeze ruffled my hair as we glided across the water, the rhythmic sound of the boat's engine a soothing counterpoint to the symphony of birdsong emanating from the lush banks.",
+                  image: "https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298187/VFBC%20WEBSITE%20PICS/Pictures/002A1722_ozt4ob"
+                },
+              ]
             },
             {
               name: 'Stargazig',
-              image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695300409/VFBC%20WEBSITE%20PICS/Pictures/002A2932_syoiqd'
+              image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695300409/VFBC%20WEBSITE%20PICS/Pictures/002A2932_syoiqd',
+              description: "The night blanketed Katombora Island in a thick, velvety darkness, the only light emanating from the twinkling stars scattered across the endless sky. Far from the city lights, the celestial canvas above shimmered with an intensity I had never witnessed before.",
+              activities: [
+                {
+                  name: "Star types",
+                  description: "As the sun dipped towards the horizon, casting a fiery glow across the Zambezi River, I boarded a small boat, embarking on a sunset cruise around Katombora Island. The gentle breeze ruffled my hair as we glided across the water, the rhythmic sound of the boat's engine a soothing counterpoint to the symphony of birdsong emanating from the lush banks.",
+                  image: "https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298187/VFBC%20WEBSITE%20PICS/Pictures/002A1722_ozt4ob"
+                },
+              ]
             },
           ],
         title_two: 'A place of outstanding natural beauty on a secret Riviera in the heart of Africa',
@@ -279,104 +312,204 @@ export const katombora_data = {
     },
     gallery: [
         {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297762/VFBC%20WEBSITE%20PICS/Pictures/002A0808_eh8bg2'
+          original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297740/VFBC%20WEBSITE%20PICS/Pictures/002A0738_vs92ag',
+          src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297740/VFBC%20WEBSITE%20PICS/Pictures/002A0738_vs92ag',
+          width: 1,
+          height: 1
+      },
+        {
+            original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297762/VFBC%20WEBSITE%20PICS/Pictures/002A0808_eh8bg2',
+            src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297762/VFBC%20WEBSITE%20PICS/Pictures/002A0808_eh8bg2',
+            width: 3,
+            height: 4
+        },
+
+        {
+            original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297277/VFBC%20WEBSITE%20PICS/Pictures/002A0719_ptmkux',
+            src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297277/VFBC%20WEBSITE%20PICS/Pictures/002A0719_ptmkux',
+            width: 3,
+            height: 4
         },
         {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297740/VFBC%20WEBSITE%20PICS/Pictures/002A0738_vs92ag'
+            original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297266/VFBC%20WEBSITE%20PICS/Pictures/002A0692_hj2dge',
+            src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297266/VFBC%20WEBSITE%20PICS/Pictures/002A0692_hj2dge',
+            width: 3,
+            height: 4
         },
         {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297277/VFBC%20WEBSITE%20PICS/Pictures/002A0719_ptmkux'
+            original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297264/VFBC%20WEBSITE%20PICS/Pictures/002A0678_tesuyf',
+            src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297264/VFBC%20WEBSITE%20PICS/Pictures/002A0678_tesuyf',
+            width: 3,
+            height: 4
         },
         {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297266/VFBC%20WEBSITE%20PICS/Pictures/002A0692_hj2dge'
+            original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297263/VFBC%20WEBSITE%20PICS/Pictures/002A0684_juabnk',
+            src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297263/VFBC%20WEBSITE%20PICS/Pictures/002A0684_juabnk',
+            width: 3,
+            height: 4
         },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297264/VFBC%20WEBSITE%20PICS/Pictures/002A0678_tesuyf'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297263/VFBC%20WEBSITE%20PICS/Pictures/002A0684_juabnk'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297262/VFBC%20WEBSITE%20PICS/Pictures/002A0681_cddnhn'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297259/VFBC%20WEBSITE%20PICS/Pictures/002A0635_dawilz'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297255/VFBC%20WEBSITE%20PICS/Pictures/002A0608_ik8ghs'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298715/VFBC%20WEBSITE%20PICS/Pictures/002A2305_nsza22'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298711/VFBC%20WEBSITE%20PICS/Pictures/002A2274_mozyaj'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298705/VFBC%20WEBSITE%20PICS/Pictures/002A2211_raxx7e'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298699/VFBC%20WEBSITE%20PICS/Pictures/002A2181_naw9cw'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298689/VFBC%20WEBSITE%20PICS/Pictures/002A2094_zhwbnl'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298688/VFBC%20WEBSITE%20PICS/Pictures/002A2048_h0kgkt'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298683/VFBC%20WEBSITE%20PICS/Pictures/002A2030_tufecc'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298215/VFBC%20WEBSITE%20PICS/Pictures/002A1962_nx8iit'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298215/VFBC%20WEBSITE%20PICS/Pictures/002A2011_wjspag'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298206/VFBC%20WEBSITE%20PICS/Pictures/002A1922_c6f7s7'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298209/VFBC%20WEBSITE%20PICS/Pictures/002A1910_jsgkwa'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298194/VFBC%20WEBSITE%20PICS/Pictures/002A1753_zj886i'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298191/VFBC%20WEBSITE%20PICS/Pictures/002A1758_wbl6gc'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298171/VFBC%20WEBSITE%20PICS/Pictures/002A1575_cee7in'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298169/VFBC%20WEBSITE%20PICS/Pictures/002A1563_oigyaq'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298164/VFBC%20WEBSITE%20PICS/Pictures/002A1517_dlydvd'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298147/VFBC%20WEBSITE%20PICS/Pictures/002A1411_t7bjil'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298082/VFBC%20WEBSITE%20PICS/Pictures/002A0927_imw0pd'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298078/VFBC%20WEBSITE%20PICS/Pictures/002A0919_ebvgnb'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297743/VFBC%20WEBSITE%20PICS/Pictures/002A0756_f9gud2'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297760/VFBC%20WEBSITE%20PICS/Pictures/002A0796_rm0uqz'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695299457/VFBC%20WEBSITE%20PICS/Pictures/002A2574_d6udmq'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695299460/VFBC%20WEBSITE%20PICS/Pictures/002A2626_rgjqut'
-        },
-        {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695299462/VFBC%20WEBSITE%20PICS/Pictures/002A2650_vh3826'
-        },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297262/VFBC%20WEBSITE%20PICS/Pictures/002A0681_cddnhn',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297262/VFBC%20WEBSITE%20PICS/Pictures/002A0681_cddnhn',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297259/VFBC%20WEBSITE%20PICS/Pictures/002A0635_dawilz',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297259/VFBC%20WEBSITE%20PICS/Pictures/002A0635_dawilz',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297255/VFBC%20WEBSITE%20PICS/Pictures/002A0608_ik8ghs',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297255/VFBC%20WEBSITE%20PICS/Pictures/002A0608_ik8ghs',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298715/VFBC%20WEBSITE%20PICS/Pictures/002A2305_nsza22',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298715/VFBC%20WEBSITE%20PICS/Pictures/002A2305_nsza22',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298711/VFBC%20WEBSITE%20PICS/Pictures/002A2274_mozyaj',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298711/VFBC%20WEBSITE%20PICS/Pictures/002A2274_mozyaj',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298705/VFBC%20WEBSITE%20PICS/Pictures/002A2211_raxx7e',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298705/VFBC%20WEBSITE%20PICS/Pictures/002A2211_raxx7e',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298699/VFBC%20WEBSITE%20PICS/Pictures/002A2181_naw9cw',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298699/VFBC%20WEBSITE%20PICS/Pictures/002A2181_naw9cw',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298689/VFBC%20WEBSITE%20PICS/Pictures/002A2094_zhwbnl',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298689/VFBC%20WEBSITE%20PICS/Pictures/002A2094_zhwbnl',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298688/VFBC%20WEBSITE%20PICS/Pictures/002A2048_h0kgkt',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298688/VFBC%20WEBSITE%20PICS/Pictures/002A2048_h0kgkt',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298683/VFBC%20WEBSITE%20PICS/Pictures/002A2030_tufecc',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298683/VFBC%20WEBSITE%20PICS/Pictures/002A2030_tufecc',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298215/VFBC%20WEBSITE%20PICS/Pictures/002A1962_nx8iit',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298215/VFBC%20WEBSITE%20PICS/Pictures/002A1962_nx8iit',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298215/VFBC%20WEBSITE%20PICS/Pictures/002A2011_wjspag',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298215/VFBC%20WEBSITE%20PICS/Pictures/002A2011_wjspag',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298206/VFBC%20WEBSITE%20PICS/Pictures/002A1922_c6f7s7',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298206/VFBC%20WEBSITE%20PICS/Pictures/002A1922_c6f7s7',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298209/VFBC%20WEBSITE%20PICS/Pictures/002A1910_jsgkwa',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298209/VFBC%20WEBSITE%20PICS/Pictures/002A1910_jsgkwa',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298194/VFBC%20WEBSITE%20PICS/Pictures/002A1753_zj886i',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298194/VFBC%20WEBSITE%20PICS/Pictures/002A1753_zj886i',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298191/VFBC%20WEBSITE%20PICS/Pictures/002A1758_wbl6gc',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298191/VFBC%20WEBSITE%20PICS/Pictures/002A1758_wbl6gc',
+        //     width: 3,
+        //     height: 4
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298171/VFBC%20WEBSITE%20PICS/Pictures/002A1575_cee7in',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298171/VFBC%20WEBSITE%20PICS/Pictures/002A1575_cee7in',
+        //     width: 4,
+        //     height: 3
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298169/VFBC%20WEBSITE%20PICS/Pictures/002A1563_oigyaq',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298169/VFBC%20WEBSITE%20PICS/Pictures/002A1563_oigyaq',
+        //     width: 4,
+        //     height: 3
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298164/VFBC%20WEBSITE%20PICS/Pictures/002A1517_dlydvd',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298164/VFBC%20WEBSITE%20PICS/Pictures/002A1517_dlydvd',
+        //     width: 4,
+        //     height: 3
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298147/VFBC%20WEBSITE%20PICS/Pictures/002A1411_t7bjil',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298147/VFBC%20WEBSITE%20PICS/Pictures/002A1411_t7bjil',
+        //     width: 4,
+        //     height: 3
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298082/VFBC%20WEBSITE%20PICS/Pictures/002A0927_imw0pd',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298082/VFBC%20WEBSITE%20PICS/Pictures/002A0927_imw0pd',
+        //     width: 4,
+        //     height: 3
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298078/VFBC%20WEBSITE%20PICS/Pictures/002A0919_ebvgnb',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298078/VFBC%20WEBSITE%20PICS/Pictures/002A0919_ebvgnb',
+        //     width: 4,
+        //     height: 3
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297743/VFBC%20WEBSITE%20PICS/Pictures/002A0756_f9gud2',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297743/VFBC%20WEBSITE%20PICS/Pictures/002A0756_f9gud2',
+        //     width: 4,
+        //     height: 3
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297760/VFBC%20WEBSITE%20PICS/Pictures/002A0796_rm0uqz',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695297760/VFBC%20WEBSITE%20PICS/Pictures/002A0796_rm0uqz',
+        //     width: 4,
+        //     height: 3
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695299457/VFBC%20WEBSITE%20PICS/Pictures/002A2574_d6udmq',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695299457/VFBC%20WEBSITE%20PICS/Pictures/002A2574_d6udmq',
+        //     width: 4,
+        //     height: 3
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695299460/VFBC%20WEBSITE%20PICS/Pictures/002A2626_rgjqut',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695299460/VFBC%20WEBSITE%20PICS/Pictures/002A2626_rgjqut',
+        //     width: 4,
+        //     height: 3
+        // },
+        // {
+        //     original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695299462/VFBC%20WEBSITE%20PICS/Pictures/002A2650_vh3826',
+        //     src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695299462/VFBC%20WEBSITE%20PICS/Pictures/002A2650_vh3826',
+        //     width: 4,
+        //     height: 3
+        // },
     ],
     reviews: [
         {

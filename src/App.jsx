@@ -5,6 +5,7 @@ import IndexPage from "./containers/Home";
 import Destination from "./containers/Destination";
 import TripPlanner from "./containers/TripPlanner";
 import Blog from "./containers/Blog";
+import BlogPost from "./containers/BlogPost";
 import NotFound from "./components/NotFound";
 import Footer from "./components/Footer";
 
@@ -82,16 +83,12 @@ function App() {
           
       <Routes location={displayLocation}>
         <Route index element={<IndexPage />} />
-        <Route path=":destination" element={<Destination />}>
-            <Route index element={<Destination />} />
-            {/* <Route path="about" element={<Destination />} /> */}
-            <Route path="plan-your-trip" element={<TripPlanner />} />
-            <Route path="useful-links" element={<Destination />} />
-            <Route path="blog" element={<Blog />} />
+            <Route exact path=":destination" element={<Destination />} />
+            <Route exact path=":destination/plan-your-trip" element={<TripPlanner />} />
+            <Route path=":destination/useful-links" element={<Destination />} />
+            <Route path=":destination/blog" element={<Blog />} />
+            <Route path=":destination/blog/:slug/:id" element={<BlogPost />} />
             <Route path="*" element={<NotFound />} />
-        </Route>
-          {/* <Route path="/:destination" element={<Destination />} />
-          <Route path="/blog" element={<Blog />} /> */}
       </Routes>
     <Footer />
     <ScrollToTop />

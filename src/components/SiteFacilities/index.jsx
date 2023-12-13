@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ImageGallery from "react-image-gallery";
+
 import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -171,7 +171,9 @@ function SiteFacilities({ title, facilities }) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                flexDirection: "column"
+                flexDirection: "column",
+                // height: '100%',
+                maxHeight: "25.0625rem",
               }}
             >
               <SwiperCarousel data={sliderImages} />

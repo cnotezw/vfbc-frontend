@@ -180,27 +180,60 @@ export const imbabala_data = {
         }
     },
     map: {
-        url: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1702057419/VFBC%20WEBSITE%20PICS/Imbabala/IMBAmap_2_2_ifuyio_1_cgmkoi',
+        mobile: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1702057419/VFBC%20WEBSITE%20PICS/Imbabala/IMBAmap_2_2_ifuyio_1_cgmkoi',
+        desktop: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701470736/VFBC%20WEBSITE%20PICS/Imbabala/IMBAmap_2_2_ifuyio',
     },
     activities: {
         title: 'About Us',
         paragraph_one: 'Visit Imbabala because it is beautifully positioned on the banks of the Zambezi River, there is lots to do, and the Victoria Falls is just 80kms downstream.',
         list: [
-            {
-              name: 'Zambezi Cruise',
-              image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426557/VFBC%20WEBSITE%20PICS/Imbabala/imbalala-zambezi-safari-lodge-boat-cruise-elephant-herd-01-590x390_xaaj2e'
-            },
-            {
-              name: 'Game Drives',
-              image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701470736/VFBC%20WEBSITE%20PICS/Imbabala/imbalala-zambezi-safari-lodge-game-drive-wild-dogs-590x390_vi26fz'
-            },
-            {
-              name: 'Fishing',
-              image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695299456/VFBC%20WEBSITE%20PICS/Pictures/002A2601_ujpop0'
-            },
+          {
+            name: 'Zambezi Cruise',
+            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298210/VFBC%20WEBSITE%20PICS/Pictures/002A1913_qiqief',
+            description: 'The vastness of the river unfolded before us, reflecting the fiery hues of the setting sun. The mist rising from the water created an ethereal atmosphere, adding to the magic of the moment. As we cruised past lush islands and towering cliffs, the setting sun transformed the landscape into a canvas of vibrant colors.',
+            activities: [
+              {
+                name: "Sunset Cruise",
+                description: "As the sun dipped towards the horizon, casting a fiery glow across the Zambezi River, I boarded a small boat, embarking on a sunset cruise around Katombora Island. The gentle breeze ruffled my hair as we glided across the water, the rhythmic sound of the boat's engine a soothing counterpoint to the symphony of birdsong emanating from the lush banks.",
+                image: "https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298187/VFBC%20WEBSITE%20PICS/Pictures/002A1722_ozt4ob"
+              },
+            ]
+          },
+          {
+            name: 'Game Drives',
+            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298110/VFBC%20WEBSITE%20PICS/Pictures/002A1163_ygnt5o',
+            description: "The anticipation crackled in the air as our jeep bounced along the dusty track, plunging deeper into the heart of the Mosi-oa-Tunya National Park. Dawn painted the sky in hues of orange and pink, promising a day filled with adventure.",
+            activities: [
+              {
+                name: "Elephant Watching",
+                description: "As the sun dipped towards the horizon, casting a fiery glow across the Zambezi River, I boarded a small boat, embarking on a sunset cruise around Katombora Island. The gentle breeze ruffled my hair as we glided across the water, the rhythmic sound of the boat's engine a soothing counterpoint to the symphony of birdsong emanating from the lush banks.",
+                image: "https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298187/VFBC%20WEBSITE%20PICS/Pictures/002A1722_ozt4ob"
+              },
+            ]
+          },
+          {
+            name: 'Fishing',
+            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695299456/VFBC%20WEBSITE%20PICS/Pictures/002A2601_ujpop0',
+            description: "The pre-dawn light kissed the horizon as I boarded the boat, my excitement palpable. The Zambezi River lay before me, a glistening ribbon of water teeming with possibilities. My mission: to conquer the legendary tigerfish, known for its ferocious fighting spirit and razor-sharp teeth.",
+            activities: [
+              {
+                name: "Boat Fishing",
+                description: "As the sun dipped towards the horizon, casting a fiery glow across the Zambezi River, I boarded a small boat, embarking on a sunset cruise around Katombora Island. The gentle breeze ruffled my hair as we glided across the water, the rhythmic sound of the boat's engine a soothing counterpoint to the symphony of birdsong emanating from the lush banks.",
+                image: "https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298187/VFBC%20WEBSITE%20PICS/Pictures/002A1722_ozt4ob"
+              },
+            ]
+          },
             {
               name: 'Walking Safari',
-              image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701469019/VFBC%20WEBSITE%20PICS/Imbabala/Mask_group_1_jlnrd9'
+              image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701469019/VFBC%20WEBSITE%20PICS/Imbabala/Mask_group_1_jlnrd9',
+              description: "The pre-dawn light kissed the horizon as I boarded the boat, my excitement palpable. The Zambezi River lay before me, a glistening ribbon of water teeming with possibilities. My mission: to conquer the legendary tigerfish, known for its ferocious fighting spirit and razor-sharp teeth.",
+              activities: [
+                {
+                  name: "Sunset Walk",
+                  description: "As the sun dipped towards the horizon, casting a fiery glow across the Zambezi River, I boarded a small boat, embarking on a sunset cruise around Katombora Island. The gentle breeze ruffled my hair as we glided across the water, the rhythmic sound of the boat's engine a soothing counterpoint to the symphony of birdsong emanating from the lush banks.",
+                  image: "https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1695298191/VFBC%20WEBSITE%20PICS/Pictures/002A1758_wbl6gc"
+                },
+              ]
             },
           ],
         title_two: 'A place of outstanding natural beauty on a secret Riviera in the heart of Africa',
@@ -210,22 +243,40 @@ export const imbabala_data = {
     },
     gallery: [
         {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426557/VFBC%20WEBSITE%20PICS/Imbabala/imbalala-zambezi-safari-lodge-boat-cruise-elephant-herd-01-590x390_xaaj2e'
+            original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426557/VFBC%20WEBSITE%20PICS/Imbabala/imbalala-zambezi-safari-lodge-boat-cruise-elephant-herd-01-590x390_xaaj2e',
+            src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426557/VFBC%20WEBSITE%20PICS/Imbabala/imbalala-zambezi-safari-lodge-boat-cruise-elephant-herd-01-590x390_xaaj2e',
+            width: 4,
+            height: 3
         },
         {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426559/VFBC%20WEBSITE%20PICS/Imbabala/imbabala-zambezi-safari-lodge-468710_oop6ut'
+          original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426559/VFBC%20WEBSITE%20PICS/Imbabala/imbabala-zambezi-safari-lodge-468710_oop6ut',
+            src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426559/VFBC%20WEBSITE%20PICS/Imbabala/imbabala-zambezi-safari-lodge-468710_oop6ut',
+            width: 4,
+            height: 3
         },
         {
-            image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426558/VFBC%20WEBSITE%20PICS/Imbabala/view-of-the-river-from-firepit_opjufg'
+          original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426558/VFBC%20WEBSITE%20PICS/Imbabala/view-of-the-river-from-firepit_opjufg',
+            src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426558/VFBC%20WEBSITE%20PICS/Imbabala/view-of-the-river-from-firepit_opjufg',
+            width: 4,
+            height: 3
         },
         {
-          image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426556/VFBC%20WEBSITE%20PICS/Imbabala/ximbabala-main-lounge.pagespeed.ic.SHyVRepUZY_gzan13'
+          original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426556/VFBC%20WEBSITE%20PICS/Imbabala/ximbabala-main-lounge.pagespeed.ic.SHyVRepUZY_gzan13',
+          src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426556/VFBC%20WEBSITE%20PICS/Imbabala/ximbabala-main-lounge.pagespeed.ic.SHyVRepUZY_gzan13',
+          width: 4,
+          height: 3
         },
         {
-          image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426554/VFBC%20WEBSITE%20PICS/Imbabala/imbabala-1024x341_buwvtc'
+          original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426554/VFBC%20WEBSITE%20PICS/Imbabala/imbabala-1024x341_buwvtc',
+          src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426554/VFBC%20WEBSITE%20PICS/Imbabala/imbabala-1024x341_buwvtc',
+          width: 4,
+          height: 3
         },
         {
-          image: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426553/VFBC%20WEBSITE%20PICS/Imbabala/7cfb52a59d009c716b8ff837254d9ccc18f5b711-1600x1065_rjp79n'
+          original: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426553/VFBC%20WEBSITE%20PICS/Imbabala/7cfb52a59d009c716b8ff837254d9ccc18f5b711-1600x1065_rjp79n',
+          src: 'https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701426553/VFBC%20WEBSITE%20PICS/Imbabala/7cfb52a59d009c716b8ff837254d9ccc18f5b711-1600x1065_rjp79n',
+          width: 4,
+          height: 3
         },
     ],
     reviews: [

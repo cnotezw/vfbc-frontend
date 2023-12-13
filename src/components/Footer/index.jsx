@@ -266,11 +266,8 @@ function Footer() {
             
             >
               <Box
-                   sx={{ 
-                    display: "none"
-                  }}
-                    md={{ 
-                    display: "block",
+             
+                    sx={{
                     fontSize: "1.25rem",
                     fontFamily: 'Montserrat',
                     fontWeight: 400,
@@ -333,9 +330,18 @@ function Footer() {
           <AnimatedPawsKudu />
           {/* <AnimatedPawsLion /> */}
         </Box>
-        <div className="footer-image">
-          <img src={lineBg}  alt="" />
-        </div>
+        <Box className="footer-image-comtainer">
+          <div 
+            className="footer-image"
+            style={{
+              backgroundImage: `url(${lineBg})`,
+              backgroundSize: "100%",
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
+            {/* <img src={lineBg}  alt="" /> */}
+          </div>
+        </Box>
     </Box>
     );
   }

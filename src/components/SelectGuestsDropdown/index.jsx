@@ -1,25 +1,6 @@
 import React, { useState } from "react";
 import "./styles.css";
 
-// A custom hook to create a counter with increment and decrement functions
-const useCounter = (initialValue, min, max) => {
-  const [value, setValue] = useState(initialValue);
-
-  const increment = () => {
-    if (value < max) {
-      setValue(value + 1);
-    }
-  };
-
-  const decrement = () => {
-    if (value > min) {
-      setValue(value - 1);
-    }
-  };
-
-  return [value, increment, decrement];
-};
-
 // A component to render a single row of the dropdown with a label, a counter, and a description
 const GuestsDropdownRow = ({ label, value, increment, decrement, description }) => {
   return (
@@ -40,11 +21,8 @@ const GuestsDropdownRow = ({ label, value, increment, decrement, description }) 
 };
 
 // A component to render the guests dropdown
-const GuestsDropdown = ({ maxOccupancy }) => {
-  // Use the custom hook to create counters for adults, children, and infants
-  const [adults, incrementAdults, decrementAdults] = useCounter(1, 1, maxOccupancy);
-  const [children, incrementChildren, decrementChildren] = useCounter(0, 0, maxOccupancy - adults);
-  const [infants, incrementInfants, decrementInfants] = useCounter(0, 0, 5);
+const GuestsDropdown = ({ adults, incrementAdults, decrementAdults, children, incrementChildren, decrementChildren, infants, incrementInfants, decrementInfants }) => {
+
 
   // Calculate the total number of guests
   const totalGuests = adults + children;

@@ -7,30 +7,14 @@ import './styles.css';
 
 
 function PawLoader() {
-  // const [paws, setPaws] = useState(lionpaws);
   const [counter, setCounter] = useState(1);
 
-  // setInterval(() => {
-  //   // setCounter(counter + 1);
-  //   setCounter((prevCounter) => prevCounter+1)
-  // }, 20050);
-
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     if(counter === 1) setCounter(counter+1);
-  //     if(counter === 2) setCounter(counter+1);
-  //     if(counter === 3) setCounter(counter+1);
-  //     if(counter === 4) setCounter(1);
-  //   }, 20050)
-  //   console.log(`counter is ${counter}`);
-  // }, [counter]);
-
     return (
-      <div className={`animated-paws3`}>
+      <div className={`animated-kudu-paws`}>
         <svg id="svg-sprite">
           <symbol id="paw" viewBox="0 0 249 209.32">
             <image
-              xlinkHref={paws}
+              xlinkHref={lionpaws}
               x={0}
               y={0}
               height="100px"
@@ -38,7 +22,7 @@ function PawLoader() {
             />
           </symbol>
         </svg>
-        <div className={`kudu-loader${counter}`}>
+        <div className={`kudu-paws`}>
           <div className="paw">
             <svg className="icon">
               <use xlinkHref="#paw" />

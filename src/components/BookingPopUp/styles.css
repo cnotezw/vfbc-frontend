@@ -1,0 +1,140 @@
+.css-1hj9846-MuiListItem-root {
+    position: relative;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /* padding-left: 16px;
+    padding-right: 16px; */
+    padding: 0px !important;
+}
+
+.css-10hburv-MuiTypography-root {
+    margin: 0;
+    font-family: "Montserrat";
+    font-weight: 800 !important;
+}
+
+.css-konndc-MuiListItemText-root {
+    margin-left: 1rem;
+}
+
+.popup-close {
+    width: 100%;
+    background: #fff !important;
+    color: #485840 !important;
+    border: 1px solid #485840 !important;
+}
+
+.popup-finalize-button {
+    width: 100%;
+    background: #485840 !important;
+    color: #fff !important;
+}
+
+.popup-finalize-button.css-1b2abom-MuiButtonBase-root-MuiButton-root.Mui-disabled {
+    background: rgba(72, 88, 64, .25) !important;
+    color: #fff !important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    color: #000 !important;
+}
+
+.css-1qix38o-MuiFormLabel-root-MuiInputLabel-root {
+    color: #000 !important;
+}
+
+/* Check mark  */
+/* animations */
+
+@-webkit-keyframes checkmark {
+    0% {
+        stroke-dashoffset: 50px
+    }
+
+    100% {
+        stroke-dashoffset: 0
+  }
+}
+
+@-ms-keyframes checkmark {
+    0% {
+        stroke-dashoffset: 50px
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes checkmark {
+    0% {
+        stroke-dashoffset: 50px
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@-webkit-keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px
+    }
+
+    100% {
+        stroke-dashoffset: 480px
+    }
+}
+
+@-ms-keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px
+    }
+
+    100% {
+        stroke-dashoffset: 480px
+    }
+}
+
+@keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px
+    }
+
+    100% {
+        stroke-dashoffset: 480px
+    }
+}
+
+/* other styles */
+/* .svg svg {
+    display: none
+}
+ */
+.inlinesvg .svg svg {
+    display: inline
+}
+
+/* .svg img {
+    display: none
+} */
+
+.icon--order-success svg path {
+    -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+    animation: checkmark 0.25s ease-in-out 0.7s backwards;
+      -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
+    animation-delay: 2s;
+}
+
+.icon--order-success svg circle {
+    -webkit-animation: checkmark-circle 0.6s ease-in-out backwards;
+    animation: checkmark-circle 0.6s ease-in-out backwards;
+      -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation-delay: 1s;
+}
+

@@ -1,6 +1,7 @@
 import React from "react";
 import Box from '@mui/material/Box';
 import ActivitiyCards from '../ActivitiyCards'
+import { ActivityPopup } from "../ActivityPopup";
 
 import './styles.css';
 
@@ -28,45 +29,14 @@ function DestinationActivities({ paragraph_one, paragraph_two, paragraph_three, 
           >
               Activities
           </Box>
-          <Box
-            sx={{ 
-              // width: '100vw', 
-              fontSize: "1.25rem",
-              fontFamily: 'Montserrat',
-              fontWeight: 400,
-              lineHeight: '105%',
-              letterSpacing:' -0.0625rem'
-            }}
-          >
+          <Box className="subtitle-one">
             {paragraph_one}
         </Box>
         </Box>
         <Box>
             <ActivitiyCards list={list} />
         </Box>
-        <Box
-            sx={{ 
-              width: '100%', 
-              fontSize: "2rem",
-              fontFamily: 'Montserrat',
-              fontWeight: 700,
-              color: '#AB9370',
-              textAlign: 'center',
-              margin: '2rem auto',
-              lineHeight: '1.978rem'
-            }}
-
-            md={{ 
-              width: '50vw', 
-              fontSize: "2rem",
-              fontFamily: 'Montserrat',
-              fontWeight: 700,
-              color: '#AB9370',
-              textAlign: 'center',
-              margin: '2rem auto',
-              lineHeight: '1.978rem'
-            }}
-          >
+        <Box className="subtitle-two" >
               {title_two}
           </Box>
           <Box

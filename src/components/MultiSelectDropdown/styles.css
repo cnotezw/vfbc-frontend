@@ -1,5 +1,6 @@
 .booking-multi-select {
     color: #fff !important;
+    min-width: 20rem;
 }
 
 .booking-multi-select .MuiOutlinedInput-notchedOutline {

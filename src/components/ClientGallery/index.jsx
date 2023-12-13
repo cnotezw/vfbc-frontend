@@ -4,6 +4,9 @@ import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
+
+import {ClientDialog} from "../ClientPopup";
+
 import './styles.css';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -25,6 +28,17 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 function ClientGallery({ clients }) {
+  const [open, setOpen] = React.useState(false);
+  const [activeClient, setActiveClient] = React.useState(null);
+
+  const handleClickOpen = (client) => {
+    setActiveClient(client)
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
     return (
       <div className="client-gallery-section">
         <Box
@@ -47,6 +61,7 @@ function ClientGallery({ clients }) {
               {clients.map((client, index) => (
                 <Grid xs={2} sm={4} md={4} key={client.image + index}>
                   <Item
+                    
                     style={{
                       backgroundImage: `url(${client.image})`,
                       position: 'relative',
@@ -59,11 +74,12 @@ function ClientGallery({ clients }) {
                     }}
                   >
                     <div className="card-overlay"></div>
-                    <div className="client-title">{client.name}</div>
+                    <div className="client-title" onClick={() => handleClickOpen(client)}>{client.name}</div>
                   </Item>
                 </Grid>
               ))}
             </Grid>
+            <ClientDialog open={open} handleClose={handleClose} data={activeClient}  />
           </Box>
         </Box>
         <Box

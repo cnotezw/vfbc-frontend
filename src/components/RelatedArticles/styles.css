@@ -1,0 +1,36 @@
+.related-articles {
+    /* min-height: 20rem; */
+    margin: 4rem;
+
+    @media (max-width: 680px) {
+        margin: 1rem;
+      }
+}
+
+.related-articles .date-created {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 0.875rem; /* 175% */
+    letter-spacing: 0.0475rem;
+    margin: .5rem 0;
+}
+
+.related-articles .blog-title {
+    color: #AB9370;
+
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.53125rem;
+        margin: .5rem 0;
+}
+
+.view-btn {
+    color: #AB9370 !important;
+    border: 1px solid #AB9370 !important;
+
+}

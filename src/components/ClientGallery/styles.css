@@ -6,7 +6,7 @@
 	min-height: 23.938rem;
 	width: 100vw;
 	overflow: hidden;
-	padding: 4rem;
+	padding: 2rem 4rem;
   
 	@media (max-width: 1024px) {
 	  padding: 2rem;

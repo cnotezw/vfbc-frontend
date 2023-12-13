@@ -2,3 +2,19 @@
     margin: 2rem 0;
 
 }
+
+.destination-map .title {
+    margin: 1rem 4rem;
+
+}
+
+@media (max-width: 680px) {
+    .destination-map {
+        margin: 2rem 0;
+    
+    }
+
+    .destination-map .title {
+        margin: 1rem;
+    }
+}

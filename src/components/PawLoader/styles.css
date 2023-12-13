@@ -1,150 +1,118 @@
-.animated-paws1 {
+.animated-kudu-paws {
     position: absolute;
-    top: -10%;
-    right: 15%;
+    bottom: 20rem;
+    left: 10%;
 }
 
-.animated-paws2 {
-    position: absolute;
-    bottom: -10%;
-    left: 0%;
-}
-
-.animated-paws3 {
-    position: absolute;
-    top: 0%;
-    right: 50%;
-}
-
-.animated-paws4 {
-    position: absolute;
-    top: -0%;
-    right: 15%;
-}
-
-.kudu-loader1, .kudu-loader2, .kudu-loader3, .kudu-loader4 {
-    position: absolute;
+.kudu-paws {
+    position: fixed;
     transform-origin: 50% 50%;
     font-size: 80px;
     width: 1em;
     height: 3em;
 }
-.kudu-loader1 .paw, .kudu-loader2 .paw, .kudu-loader3 .paw, .kudu-loader4 .paw {
+.kudu-paws .paw {
     width: 1.5em;
     height: 1em;
     animation: 20050ms pawAnimation ease-in-out infinite;
     opacity: 0;
 }
-.kudu-loader1 .paw svg, .kudu-loader2 .paw svg, .kudu-loader3 .paw svg, .kudu-loader4 .paw svg {
+.kudu-paws .paw svg {
     width: 100%;
     height: 100%;
 }
-/* .kudu-loader1 .paw .icon, .kudu-loader2 .paw .icon, .kudu-loader3 .paw .icon, .kudu-loader4 .paw .icon {
+/* .kudu-paws .paw .icon, .kudu-loader2 .paw .icon, .kudu-loader3 .paw .icon, .kudu-loader4 .paw .icon {
     fill: #d31145;
 } */
-.kudu-loader1 .paw:nth-child(odd), .kudu-loader2 .paw:nth-child(odd), .kudu-loader3 .paw:nth-child(odd), .kudu-loader4 .paw:nth-child(odd) {
+.kudu-paws .paw:nth-child(odd) {
     transform: rotate(0deg);
 }
-.kudu-loader1 .paw:nth-child(even), .kudu-loader2 .paw:nth-child(even), .kudu-loader3 .paw:nth-child(even), .kudu-loader4 .paw:nth-child(even) {
+.kudu-paws .paw:nth-child(even) {
     transform: rotate(0deg) scaleX(-1) translate(15%, -50%);
 }
-.kudu-loader1 .paw:nth-child(1), .kudu-loader2 .paw:nth-child(1), .kudu-loader3 .paw:nth-child(1), .kudu-loader4 .paw:nth-child(1) {
+.kudu-paws .paw:nth-child(1) {
     animation-delay: 2.25s;
     transform: rotate(0deg) translate3d(-4%, -48%, 0);
 }
-.kudu-loader1 .paw:nth-child(1), .kudu-loader2 .paw:nth-child(1), .kudu-loader3 .paw:nth-child(1), .kudu-loader4 .paw:nth-child(1) {
+.kudu-paws .paw:nth-child(1) {
     animation-delay: 2.25s;
     transform: rotate(-8deg) translate3d(30%, -50%, 0);
 }
-.kudu-loader1 .paw:nth-child(2), .kudu-loader2 .paw:nth-child(2), .kudu-loader3 .paw:nth-child(2), .kudu-loader4 .paw:nth-child(2) {
+.kudu-paws .paw:nth-child(2) {
     animation-delay: 2s;
     transform: rotate(0deg) scaleX(-1) translate3d(10%, -100%, 0);
 }
-.kudu-loader1 .paw:nth-child(2), .kudu-loader2 .paw:nth-child(2), .kudu-loader3 .paw:nth-child(2), .kudu-loader4 .paw:nth-child(2) {
+.kudu-paws .paw:nth-child(2) {
     animation-delay: 2s;
     transform: rotate(-8deg) scaleX(-1) translate3d(-30%, -120%, 0);
 }
-.kudu-loader1 .paw:nth-child(3), .kudu-loader2 .paw:nth-child(3), .kudu-loader3 .paw:nth-child(3), .kudu-loader4 .paw:nth-child(3) {
+.kudu-paws .paw:nth-child(3) {
     animation-delay: 1.75s;
     transform: rotate(0deg) translate3d(-12%, -144%, 0);
 }
-.kudu-loader1 .paw:nth-child(3), .kudu-loader2 .paw:nth-child(3), .kudu-loader3 .paw:nth-child(3), .kudu-loader4 .paw:nth-child(3) {
+.kudu-paws .paw:nth-child(3) {
     animation-delay: 1.75s;
     transform: rotate(0deg) translate3d(45%, -144%, 0);
 }
-.kudu-loader1 .paw:nth-child(4), .kudu-loader2 .paw:nth-child(4), .kudu-loader3 .paw:nth-child(4), .kudu-loader4 .paw:nth-child(4) {
+.kudu-paws .paw:nth-child(4) {
     animation-delay: 1.5s;
     transform: rotate(0deg) scaleX(-1) translate3d(20%, -200%, 0);
 }
-.kudu-loader1 .paw:nth-child(4), .kudu-loader2 .paw:nth-child(4), .kudu-loader3 .paw:nth-child(4), .kudu-loader4 .paw:nth-child(4) {
+.kudu-paws .paw:nth-child(4) {
     animation-delay: 1.5s;
     transform: rotate(0deg) scaleX(-1) translate3d(-32%, -200%, 0);
 }
-.kudu-loader1 .paw:nth-child(5), .kudu-loader2 .paw:nth-child(5), .kudu-loader3 .paw:nth-child(5), .kudu-loader4 .paw:nth-child(5) {
+.kudu-paws .paw:nth-child(5) {
     animation-delay: 1.25s;
     transform: rotate(0deg) translate3d(-20%, -240%, 0);
 }
-.kudu-loader1 .paw:nth-child(5), .kudu-loader2 .paw:nth-child(5), .kudu-loader3 .paw:nth-child(5), .kudu-loader4 .paw:nth-child(5) {
+.kudu-paws .paw:nth-child(5) {
     animation-delay: 1.25s;
     transform: rotate(0deg) translate3d(40%, -240%, 0);
 }
-.kudu-loader1 .paw:nth-child(6), .kudu-loader2 .paw:nth-child(6), .kudu-loader3 .paw:nth-child(6), .kudu-loader4 .paw:nth-child(6) {
+.kudu-paws .paw:nth-child(6) {
     animation-delay: 1s;
     transform: rotate(0deg) scaleX(-1) translate3d(30%, -300%, 0);
 }
-.kudu-loader1 .paw:nth-child(6), .kudu-loader2 .paw:nth-child(6), .kudu-loader3 .paw:nth-child(6), .kudu-loader4 .paw:nth-child(6) {
+.kudu-paws .paw:nth-child(6) {
     animation-delay: 1s;
     transform: rotate(0deg) scaleX(-1) translate3d(-30%, -300%, 0);
 }
-.kudu-loader1 .paw:nth-child(7), .kudu-loader2 .paw:nth-child(7), .kudu-loader3 .paw:nth-child(7), .kudu-loader4 .paw:nth-child(7) {
+.kudu-paws .paw:nth-child(7) {
     animation-delay: 0.75s;
     transform: rotate(0deg) translate3d(-28%, -336%, 0);
 }
-.kudu-loader1 .paw:nth-child(7), .kudu-loader2 .paw:nth-child(7), .kudu-loader3 .paw:nth-child(7), .kudu-loader4 .paw:nth-child(7) {
+.kudu-paws .paw:nth-child(7) {
     animation-delay: 0.75s;
     transform: rotate(1deg) translate3d(7%, -336%, 0);
 }
-.kudu-loader1 .paw:nth-child(8), .kudu-loader2 .paw:nth-child(8), .kudu-loader3 .paw:nth-child(8), .kudu-loader4 .paw:nth-child(8) {
+.kudu-paws .paw:nth-child(8) {
     animation-delay: 0.5s;
     transform: rotate(0deg) scaleX(-1) translate3d(40%, -400%, 0);
 }
-.kudu-loader1 .paw:nth-child(8), .kudu-loader2 .paw:nth-child(8), .kudu-loader3 .paw:nth-child(8), .kudu-loader4 .paw:nth-child(8) {
+.kudu-paws .paw:nth-child(8) {
     animation-delay: 0.5s;
     transform: rotate(1deg) scaleX(-1) translate3d(8%, -400%, 0);
 }
-.kudu-loader1 .paw:nth-child(9), .kudu-loader2 .paw:nth-child(9), .kudu-loader3 .paw:nth-child(9), .kudu-loader4 .paw:nth-child(9) {
+.kudu-paws .paw:nth-child(9) {
     animation-delay: 0.25s;
     transform: rotate(0deg) translate3d(-36%, -432%, 0);
 }
-.kudu-loader1 .paw:nth-child(10), .kudu-loader2 .paw:nth-child(10), .kudu-loader3 .paw:nth-child(10), .kudu-loader4 .paw:nth-child(10) {
+.kudu-paws .paw:nth-child(10) {
     animation-delay: 0s;
     transform: rotate(0deg) scaleX(-1) translate3d(50%, -500%, 0);
 }
-.no-cssanimations .kudu-loader1 .paw, .no-cssanimations .kudu-loader2 .paw, .no-cssanimations .kudu-loader3 .paw, .no-cssanimations .kudu-loader4 .paw {
+.no-cssanimations .kudu-paws .paw {
     opacity: 1;
 }
 
 /* change rotation  */
-.kudu-loader1 {
-    top: 15%;
-    left: 50%;
-    transform: rotate(10deg) translate(-50%, 0%);
+.kudu-paws {
+    top: 1rem;
+    left: 5rem;
+    transform: rotate(30deg) translate(0%, 0%);
 }
-.kudu-loader2 {
-    top: 85%;
-    left: 10%;
-    transform: rotate(-80deg) translate(-0%, 0%);
-}
-.kudu-loader3 {
-    top: 0%;
-    left: 30%;
-    transform: rotate(180deg) translate(-50%, 50%);
-}
-.kudu-loader4 {
-    bottom: 0%;
-    right: 35%;
-    transform: rotate(220deg) translate(-50%, 0%);
-}
+
 @keyframes pawAnimation {
     0% {
         opacity: .2;

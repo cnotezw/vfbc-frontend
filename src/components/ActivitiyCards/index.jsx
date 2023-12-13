@@ -2,8 +2,9 @@ import React from "react";
 
 import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
+
+import { ActivityPopup } from "../ActivityPopup";
 import './styles.css';
 
 const Item = styled('div')(({ theme }) => ({
@@ -24,6 +25,17 @@ const Item = styled('div')(({ theme }) => ({
 }));
 
 function ActivitiyCards({ list }) {
+  const [open, setOpen] = React.useState(false);
+  const [activeClient, setActiveClient] = React.useState(null);
+
+  const handleClickOpen = (client) => {
+    setActiveClient(client)
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
     return (
       <Box sx={{ flexGrow: 1, marginTop: '1rem' }}>
         <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, md: 12 }}>
@@ -57,11 +69,12 @@ function ActivitiyCards({ list }) {
                 }}
               >
                 <div className="card-overlay"></div>
-                <div className="client-title">{client.name}</div>
+                <div className="client-title" onClick={() => handleClickOpen(client)}>{client.name}</div>
               </Item>
             </Grid>
           ))}
         </Grid>
+        <ActivityPopup open={open} handleClose={handleClose} data={activeClient} />
       </Box>
     );
   }

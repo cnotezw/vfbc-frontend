@@ -43,7 +43,7 @@ function PartnersSlider({ logo }) {
         >
           <Box
             sx={{ 
-              fontSize: "1.5rem",
+              fontSize: "1.7rem",
               fontFamily: 'Montserrat',
               fontWeight: 700,
               marginBottom: '1.5rem'

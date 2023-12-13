@@ -16,24 +16,38 @@ const Item = styled('img')(({  }) => ({
   // minHeight: '20rem'
 }));
 
-function DestinationMap({ url }) {
+function DestinationMap({ mobile, desktop, title, isMobile }) {
     return (
       <div className='destination-map'>
         <Box>
-        <Box
+          <Box className="title">
+          <Box
+            sx={{ 
+              // width: '50vw', 
+              fontSize: "2rem",
+              fontFamily: 'Montserrat',
+              fontWeight: 200,
+              color: '#AB9370',
+              lineHeight: '88.9%',
+              letterSpacing: '-0.1rem'
+            }}
+          >
+              Map
+          </Box>
+          <Box
             sx={{ 
               // width: '50vw', 
               fontSize: "2rem",
               fontFamily: 'Montserrat',
               fontWeight: 700,
-              color: '#AB9370',
-              marginLeft: '1rem'
+              color: '#AB9370'
             }}
           >
-              Island Map
+              {title}
+          </Box>
           </Box>
             <Item
-            src={url}
+            src={isMobile ? mobile : desktop}
               style={{
                 // backgroundImage: `url(${url})`,
                 // backgroundSize: "center",

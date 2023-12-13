@@ -1,0 +1,79 @@
+.destination-blog-grid {
+    /* min-height: 20rem; */
+    margin: 2rem 4rem 4rem 4rem;
+
+    @media (max-width: 680px) {
+        margin: 1rem;
+      }
+}
+
+.destination-blog-grid-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.blog-grid-title {
+    color: #AB9370;
+text-align: center;
+font-family: Montserrat;
+font-size: 2rem;
+font-style: normal;
+font-weight: 600;
+line-height: 88.9%; /* 1.778rem */
+letter-spacing: -0.1rem;
+}
+
+.destination-blog-grid-title .blog-quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AB9370;
+text-align: center;
+font-family: 'Montserrat';
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: 88.9%; /* 1.3335rem */
+letter-spacing: 0.0225rem;
+}
+
+.destination-blog-grid-title .writer {
+    color: #AB9370;
+    font-family: Hurricane;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 88.9%;
+    letter-spacing: 0.045rem;
+}
+
+.destination-blog-grid .date-created {
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 0.875rem; /* 175% */
+    letter-spacing: 0.0475rem;
+    margin: .5rem 0;
+}
+
+.destination-blog-grid .blog-title {
+    color: #AB9370;
+
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.53125rem;
+        margin: .5rem 0;
+}
+
+.view-btn {
+    color: #AB9370 !important;
+    border: 1px solid #AB9370 !important;
+
+}

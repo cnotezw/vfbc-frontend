@@ -26,19 +26,7 @@ const names = [
   'Luxury Tent'
 ];
 
-export default function MultipleSelectCheckmarks() {
-  const [personName, setPersonName] = React.useState([]);
-
-  const handleChange = (event) => {
-    const {
-      target: { value },
-    } = event;
-    setPersonName(
-      // On autofill we get a stringified value.
-      typeof value === 'string' ? value.split(',') : value,
-    );
-  };
-
+export default function MultipleSelectCheckmarks({ handleChange, accommodationType }) {
   return (
     <div className='booking-multi-select'>
       <FormControl sx={{ m: 0, width: 300 }}>
@@ -47,15 +35,15 @@ export default function MultipleSelectCheckmarks() {
           labelId="demo-multiple-checkbox-label"
           id="demo-multiple-checkbox"
           multiple
-          value={personName}
+          value={accommodationType}
           onChange={handleChange}
           input={<OutlinedInput label="Accommodation" />}
           renderValue={(selected) => selected.join(', ')}
           MenuProps={MenuProps}
         >
-          {names.map((name) => (
+          {accommodationType && names.map((name) => (
             <MenuItem key={name} value={name}>
-              <Checkbox checked={personName.indexOf(name) > -1} />
+              <Checkbox checked={accommodationType.indexOf(name) > -1} />
               <ListItemText primary={name} />
             </MenuItem>
           ))}

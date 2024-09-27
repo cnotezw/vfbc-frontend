@@ -16,7 +16,7 @@ body {
 }
 
 .fadeOut {
-  animation: 0.3s fadeOut forwards;
+  animation: 0.5s fadeOut forwards;
   max-height: 100vh;
 }
 

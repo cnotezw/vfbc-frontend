@@ -17,7 +17,7 @@ export default function ItemsList({ data }) {
         return (
             <ListItem alignItems="flex-start" sx={{ padding: 0}}>
                 <ListItemAvatar>
-                <Avatar sx={{ width: '5rem', height: '5rem'}} alt={item.name} src={item.image} />
+                <Avatar sx={{ width: '10rem', height: '10rem'}} alt={item.name} src={item.image} />
                 </ListItemAvatar>
                 <ListItemText
                     primary={item.name}

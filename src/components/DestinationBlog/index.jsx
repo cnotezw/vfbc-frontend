@@ -92,7 +92,7 @@ const DestinationBlog = ({ data, info, destination }) => {
               variant="outlined"
               className='view-btn'
             >
-              <Link className='link' to={`/${destination}/blog/${slugify(client.title)}/${index}`}>
+              <Link className='link' to={`/blog/${slugify(client.title)}/${index}`}>
                 Read More
               </Link>
             </Button>

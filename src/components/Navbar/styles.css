@@ -27,19 +27,7 @@ nav .sidebar {
     display: flex;
 }
 
-@media (min-width: 681px) {
-    nav {
-        padding: 0 4rem;
-    }
-    nav ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-  }
+
 
 nav ul li {
     padding: 0;
@@ -58,3 +46,44 @@ nav a img {
     margin: .5rem 0; 
 }
 
+.desktop-menu ul {
+    display: flex;
+}
+
+
+.desktop-menu li {
+    margin: 0 12px !important;
+}
+
+@media (min-width: 681px) {
+    nav {
+        padding: 0 4rem;
+    }
+
+    nav .sidebar {
+        display: none;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .desktop-menu {
+        display: flex;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .desktop-menu {
+        display: none;
+    }
+    
+    nav .sidebar {
+        display: flex;
+    }
+  }

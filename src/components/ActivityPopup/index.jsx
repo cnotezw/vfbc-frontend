@@ -87,7 +87,7 @@ export function ActivityPopup({open, handleClose, data}) {
                Disagree
              </Button> */}
              
-             <Button onClick={handleClose} className="popup-close-button" autoFocus>
+             <Button onClick={handleClose} className="popup-close-button">
                Close
              </Button>
            </DialogActions>

@@ -54,7 +54,7 @@ export function ClientSlider({ open, handleClose }) {
             <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
               Sound
             </Typography>
-            <Button autoFocus color="inherit" onClick={handleClose}>
+            <Button color="inherit" onClick={handleClose}>
               save
             </Button>
           </Toolbar>
@@ -122,7 +122,7 @@ export function ClientDialog({open, handleClose, data}) {
              {/* <Button autoFocus onClick={handleClose}>
                Disagree
              </Button> */}
-            <Button onClick={handleClose} className="popup-close-button" autoFocus>
+            <Button onClick={handleClose} className="popup-close-button">
                Close
              </Button>
            </DialogActions>

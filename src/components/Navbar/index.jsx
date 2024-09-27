@@ -77,17 +77,20 @@ export const Navbar = () => {
           <Link to="/">
             {vfbclogo && <img src={vfbclogo} alt=""/>}
           </Link>
-          {/* <ul>
+          <ul className="desktop-menu">
             <li>
-              <Link to="/destination">Destination</Link>
+              <Link to="/katombora-islands">Katombora Islands</Link>
             </li>
             <li>
-              <Link to="/blog">Contact Us</Link>
+              <Link to="/imbabala-lodge">Imbabala Lodge</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blog</Link>
             </li>
             <li>
                 
             </li>
-          </ul> */}
+          </ul>
          <div className="sidebar"> <SidebarMenu activePath={activePath} /></div>
       </nav>
     )

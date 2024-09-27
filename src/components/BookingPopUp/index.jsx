@@ -26,6 +26,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Slide from '@mui/material/Slide';
 
 import { deslugify } from '../../utils'
+import { setBooking } from '../../firebaseConfig';
 
 import './styles.css';
 
@@ -43,18 +44,21 @@ export function BookingPopUp({open, handleClose, data}) {
     const [loading, setLoading] = React.useState(false);
     const [bookingMade, setBookingMade] = React.useState(false);
     
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
+      console.log("handleSubmit ")
     setLoading(true);
-
+    data.email = email;
+    const result = await setBooking(data);
+    console.log("handleSubmit ", result)
     setTimeout(() => {
       setLoading(false);
       setBookingMade(true);
     }, 1000)
   };
 
-    console.log("accommodation ", data.accommodation);
-    console.log("dateRange ", data.dateRange);
-    console.log("totalGuests ", data.totalGuests);
+    // console.log("accommodation ", data.accommodation);
+    // console.log("dateRange ", data.dateRange);
+    // console.log("totalGuests ", data.totalGuests);
     return (
       <React.Fragment>
         {data ? 
@@ -117,7 +121,7 @@ export function BookingPopUp({open, handleClose, data}) {
                   margin: "1rem 0"
                 }}
               >
-                <strong>Checkin:</strong> <span style={{ margin: "0 .5rem"}}>{moment(data.dateRange[0]).format("dddd d MMMM YYYY")}</span>
+                <strong>Checkin:</strong> <span style={{ margin: "0 .5rem"}}>{moment(data.dateRange[0]).format("DD MMM YYYY")}</span>
               </Box>
               <Box
                 sx={{
@@ -126,7 +130,7 @@ export function BookingPopUp({open, handleClose, data}) {
                   margin: "1rem 0"
                 }}
               >
-                <strong>Checkout:</strong> <span style={{ margin: "0 .5rem"}}>{moment(data.dateRange[1]).format("dddd d MMMM YYYY")}</span>
+                <strong>Checkout:</strong> <span style={{ margin: "0 .5rem"}}>{moment(data.dateRange[1]).format("DD MMM YYYY")}</span>
               </Box>
               <Box
                 sx={{

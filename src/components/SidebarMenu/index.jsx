@@ -36,13 +36,13 @@ console.log("activePath: ", activePath)
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List sx={{ color: "#fff"}}>
-        <ListItem  disablePadding>
+        {/* <ListItem  disablePadding>
           <Link className='link' to={`${activePath}/plan-your-trip`}>
             <ListItemButton>
                 <ListItemText primary={"Plan Your trip"} />
               </ListItemButton>
           </Link>
-        </ListItem>
+        </ListItem> */}
        
         <ListItem disablePadding>
           <Link className='link' to={`${activePath}/imbabala-lodge`}>
@@ -51,21 +51,7 @@ console.log("activePath: ", activePath)
               </ListItemButton>
           </Link>
         </ListItem>
-        {activePath !== '/' ?
-        <ListItem disablePadding>
-        <Link className='link' to={`${activePath}/blog`}>
-          <ListItemButton>
-              <ListItemText primary={"Blog"} />
-            </ListItemButton>
-        </Link>
-      </ListItem> 
-      : <ListItem disablePadding>
-          <Link className='link' to={`/katombora-islands/blog`}>
-            <ListItemButton>
-                <ListItemText primary={"Blog"} />
-              </ListItemButton>
-          </Link>
-        </ListItem> }
+
         
       </List>
       <Divider />
@@ -91,6 +77,13 @@ console.log("activePath: ", activePath)
               </ListItemButton>
           </Link>
         </ListItem>
+        <ListItem disablePadding>
+          <Link className='link' to={`/blog`}>
+            <ListItemButton>
+                <ListItemText primary={"Blog"} />
+              </ListItemButton>
+          </Link>
+        </ListItem> 
       </List>
     </Box>
   );

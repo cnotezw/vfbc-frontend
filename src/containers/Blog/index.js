@@ -20,14 +20,15 @@ function Blog() {
 
   useEffect(() => {
     console.log("blog destination ", destination)
-    if(destination !== current_destination){
-      console.log("change destination: ", destination)
-      if(destination === 'imbabala-lodge'){
-        set_blog_data(imbabala_data)
-      } else {
-        set_blog_data(katombora_data)
-      }
-    }
+    // if(destination !== current_destination){
+    //   console.log("change destination: ", destination)
+    //   if(destination === 'imbabala-lodge'){
+    //     set_blog_data(imbabala_data)
+    //   } else {
+    //     set_blog_data(katombora_data)
+    //   }
+    // }
+    set_blog_data(katombora_data)
    
   }, [destination])
 

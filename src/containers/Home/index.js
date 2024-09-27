@@ -257,7 +257,7 @@ function Home({ sectionHeader }) {
             subtitle={header.subtitle} 
             hero={header.heroHeader} 
             image={`https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701799983/VFBC%20WEBSITE%20PICS/Victoria-Fall-9mb_kxj1f4`}
-            heroImage={`https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701807264/VFBC%20WEBSITE%20PICS/Isolation_Mode_2_hzvfx6.png`}
+            heroImage={`https://res.cloudinary.com/dtdbddo9o/image/upload/f_auto,q_auto/v1701807264/VFBC%20WEBSITE%20PICS/Isolation_Mode_2_hzvfx6`}
             sectionHeader={sectionHeader}
           />
           <About logo={logo} />

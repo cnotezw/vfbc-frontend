@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import VideoPlayer from "react-background-video-player";
 import Box from '@mui/material/Box';
 import BlockOverlay from '../BlockOverlay'
 import './styles.css';
@@ -30,7 +31,16 @@ const FullPageBackgroundWithText = ({ image, intro, title, subtitle, hero, heroI
 
   return (
     <div style={containerStyle}>
-      <div style={imageStyle} className="main-header">
+      {/* <VideoPlayer
+        style={imageStyle}
+        width="100vw"
+        src={
+          "https://res.cloudinary.com/dtdbddo9o/video/upload/v1702477878/VFBC%20WEBSITE%20PICS/77252622-a938-4259-b30a-c0d044d95752_kdwz9b.mp4"
+        }
+        autoPlay={true}
+        muted={true}
+      /> */}
+      <div  style={imageStyle} className="main-header">
         <BlockOverlay color='rgba(0,0,0, 0.5)' />
         <h5 className="title-intro">{intro}</h5>
         <h1 className="title">{title}</h1>

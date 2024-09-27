@@ -97,7 +97,7 @@ const RelatedArticles = ({ data, destination }) => {
               >
                 {/* <Link to={action.link}>Visit {action.title}</Link> */}
                 
-                <Link className='link' to={`/${destination}/blog/${slugify(client.title)}/${index}`}>
+                <Link className='link' to={`/blog/${slugify(client.title)}/${index}`}>
                   Read More
                 </Link>
               </Button>
